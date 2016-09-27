@@ -18,3 +18,4 @@
 
 # Rails specific
 config/database.yml
+log/development.log
