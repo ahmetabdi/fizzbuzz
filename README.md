@@ -1,24 +1,21 @@
-# README
+# Ruby on Rails FizzBuzz application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Development
 
-Things you may want to cover:
+### Database setup
 
-* Ruby version
+Copy `config/database.yml.example` to `config/database.yml` and update to suit your development environment.
 
-* System dependencies
+`cp config/database.yml.example config/database.yml`
 
-* Configuration
+After run `bin/setup` which will -
 
-* Database creation
+* Install Bundler
+* Run bundle to ensure all gems are installed
+* Set up the database from the structure in `db/schema.rb`
+* Clear logs and tmp files
+* Restart the application server
 
-* Database initialization
+### Start the server
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`bin/rails s`
