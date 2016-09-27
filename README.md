@@ -1,7 +1,8 @@
 # Ruby on Rails FizzBuzz application
 
-Ruby 2.3.1
-Rails 5.0.0.1
+`Ruby 2.3.1`
+
+`Rails 5.0.0.1`
 
 ## Development
 
@@ -20,4 +21,4 @@ After run `bin/setup` which will -
 
 `bin/rails s`
 
-Navigate to http://localhost:3000
+Navigate to `http://localhost:3000`
