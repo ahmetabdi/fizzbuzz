@@ -2,16 +2,13 @@
 
 ## Development
 
-### Database setup
-
-Copy `config/database.yml.example` to `config/database.yml` and update to suit your development environment.
-
-`cp config/database.yml.example config/database.yml`
+### Setup
 
 After run `bin/setup` which will -
 
 * Install Bundler
 * Run bundle to ensure all gems are installed
+* Copy the database.yml.sample file from config/database.yml.sample to config/database.yml (Edit this file to suit your development environment)
 * Set up the database from the structure in `db/schema.rb`
 * Clear logs and tmp files
 * Restart the application server
