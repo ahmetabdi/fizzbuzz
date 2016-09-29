@@ -1,0 +1,17 @@
+<ul class="pagination">
+  <% unless fizzbuzz.viewing_first_page? %>
+    <li class="arrow unavailable"><%= link_to '&laquo;'.html_safe, root_path(page: 1) %></li>
+  <% end %>
+
+  <% unless fizzbuzz.viewing_first_page? %>
+    <li><%= link_to 'Previous Page', root_path(page: fizzbuzz.previous_page) %></li>
+  <% end %>
+
+  <% unless fizzbuzz.viewing_last_page? %>
+    <li><%= link_to 'Next Page', root_path(page: fizzbuzz.next_page) %></li>
+  <% end %>
+
+  <% unless fizzbuzz.viewing_last_page? %>
+    <li class="arrow"><%= link_to '&raquo;'.html_safe, root_path(page: fizzbuzz.max_pages) %></li>
+  <% end %>
+</div>

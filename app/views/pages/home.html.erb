@@ -1,0 +1,30 @@
+<div class="row">
+  <h1>Fizzbuzz</h1>
+  <p>Current Page: <%= @fizzbuzz.current_page %> of <%= @fizzbuzz.max_pages %></p>
+  <%= render 'pagination', fizzbuzz: @fizzbuzz %>
+
+  <table>
+    <thead>
+      <tr>
+        <th width="50">Favorite</th>
+        <th>No.</th>
+        <th>Output</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @fizzbuzz.items.each do |item| %>
+      <tr>
+        <td class="highlight">
+          <% if item.favourite %>
+            <%= link_to "<i class='fi-star medium'></i>".html_safe, favourite_url(number: item.number), class: 'unfavourite', method: :delete, remote: true %>
+          <% else %>
+            <%= link_to "<i class='fi-star medium'></i>".html_safe, favourites_url(number: item.number), class: 'favourite', method: :post, remote: true %>
+          <% end %>
+        </td>
+        <td><%= item.number %></td>
+        <td><%= item.output %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
