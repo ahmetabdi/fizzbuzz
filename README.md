@@ -17,6 +17,14 @@ After run `bin/setup` which will -
 * Clear logs and tmp files
 * Restart the application server
 
+### Docker setup (Optional)
+
+Use the database.yml.example for docker development. `cp config/database.yml.docker config/database.yml`
+
+Download the images and build the container
+
+`docker-compose up`
+
 ### Start the server
 
 `bin/rails s`
