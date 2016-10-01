@@ -21,7 +21,7 @@ After run `bin/setup` which will -
 
 Use the database.yml.example for docker development. `cp config/database.yml.docker config/database.yml`
 
-Download the images and build the container
+Download the images, build the container and run the application
 
 `docker-compose up`
 
