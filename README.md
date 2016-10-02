@@ -8,7 +8,7 @@
 
 ### Setup
 
-After run `bin/setup` which will -
+Run `bin/setup` which will -
 
 * Install Bundler
 * Run bundle to ensure all gems are installed
