@@ -6,7 +6,7 @@ module Api::V1
       @favourite = Favourite.new(number: params[:number])
 
       if @favourite.save
-        render json: 'Favourite was successfully cr eated.'
+        render json: 'Favourite was successfully created.'
       else
         render json: 'Favourite could not be successfully created.'
       end
