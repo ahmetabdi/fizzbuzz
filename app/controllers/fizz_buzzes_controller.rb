@@ -5,14 +5,6 @@ class FizzBuzzesController < ApplicationController
     @fizzbuzz = FizzBuzzPresenter.new(@current_page, @per_page)
   end
 
-  def show
-    @fizzbuzz = FizzBuzz.calculate(params[:number].to_i)
-
-    respond_to do |format|
-      format.json { render json: @fizzbuzz, status: :ok }
-    end
-  end
-
   private
 
   def set_pagination
