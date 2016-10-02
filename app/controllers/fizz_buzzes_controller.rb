@@ -1,6 +1,3 @@
-require 'fizz_buzz'
-require 'presenters/fizz_buzz_presenter'
-
 class FizzBuzzesController < ApplicationController
   before_action :set_pagination, only: [:index]
 

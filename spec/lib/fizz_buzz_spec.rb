@@ -1,5 +1,3 @@
-require 'fizz_buzz'
-
 RSpec.describe FizzBuzz do
   describe '.calculate' do
     context 'when the value is a multiple of 3' do

@@ -21,10 +21,12 @@ class FizzBuzzPresenter < Struct.new(:page, :per_page)
   end
 
   def previous_page
+    return 1 if viewing_first_page?
     current_page - 1
   end
 
   def next_page
+    return max_pages if viewing_last_page?
     current_page + 1
   end
 
